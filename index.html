@@ -1,5 +1,9 @@
 <html>
 	<head>
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -9,8 +13,14 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
 		<!-- Google Maps -->
 		<script src="http://maps.googleapis.com/maps/api/js"> </script>
+
+		<!--font awesome!-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<script>
 			var toronto = new google.maps.LatLng(43.653226,-79.383184);
@@ -40,9 +50,37 @@
 
 		<title>Homepage</title>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#verticalMenu" data-offset="50">
+
+		<!-- <div class="container" id="verticalMenu">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="collapse navbar-collapse" id="verticalMenu">
+				<ul class="nav navbar-nav" role="tablist">
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#academics">Academics</a></li>
+					<li><a href="#experience">Experience</a></li>
+				</ul>
+				</div>
+			</nav>
+		</div> -->
+
+ 		<!-- <nav class="navbar navbar-inverse navbar-fixed-top" id="myNavbar">
+		  <div class="container-fluid">
+		    <div>
+		      <div class="collapse navbar-collapse">
+		        <ul class="nav navbar-nav">
+		          <li><a href="#about">Section 1</a></li>
+		          <li><a href="#projects">Section 2</a></li>
+		          <li><a href="#academic">Section 3</a></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</nav>   -->
+
 		<div class="container">
-			<header class="jumbotron">
+			<header class="jumbotron col-md-10">
 				<h1>Welcome</h1>
 				<p>Jason Wong ECE 1T6 + PEY, University of Toronto</p>
 			</header>
@@ -54,12 +92,13 @@
 					<div class="col-md-6">
 						<h3 class="header-title"><small>Personal</small></h3>
 						<img src="./Images/hockey.jpg" class="img-responsive img-circle">
-						<p>I am a 2016 + PEY (1T6+ PEY) undergraduate student. Born in Toronto but raised in Hong Kong, I joined electrical and computer because of my interest in circuits and control systems 
+						<p>I am a 2016 + PEY (1T6+ PEY) undergraduate student. Born in Toronto but raised in Hong Kong, I am back in Toronto to pursue my bachelors in engineering. I joined electrical and computer because of my interest in applying the knowledge of circuits and control systems to design innovative ideas in this era.</p>
+						<p>With a passion for programming and knowledge, I love to explore the technological word and develop new ideas. My areas of exploration have ranged from web development to mobile app developemt and even microcontrollers. As an engineer with a Raspberry Pi and Arduino, I am looking for ways to combine the 2 together! Ultimately, my goals are to have a basic knowledge of app development and databases - <code>MongoDB</code> and <code>MySQL</code> </P>
 					</div>
 					<div class="col-md-6">
 						<h3 class="header-title"><small>Academic</small></h3>
 						<img src="./Images/UTEK-2016.jpg" class="img-responsive img-circle">
-						<p>I am an ECE student with an interest in control systems. I have an interest in design</p> 
+						<p>I am an ECE student with an interest in control systems. Throughout my undergraduate journey, I have done design projects during class and in clubs mostly in <code>C</code> and <code>C++</code>. During my studies at UofT, I look forward in enhancing my programming proficency and circuitry knowledge and help contribute in developing an awesome final year design project</p> 
 					</div>
 				</article>
 			</section>
@@ -283,17 +322,24 @@
 			</section>
 			</div>
 			<div class="row">
-				<nav class="col-sm-2">
-					<ul class="list-group">
-						<li class="list-group-item">About Me</li>
-						<li class="list-group-item">Projects</li>
-						<li class="list-group-item">Academics</li>
-						<li class="list-group-item">Experience</li>
-					</ul>
-					<aside class="well">
-						<img src="./Images/hockey.jpg" class="img-responsive img-circle">
-						Jason W. is an undergraduate student from the University of Toronto studying Electrical and Computer Engineering. His interests are in...circuits and software! During his free time he likes to learn new software concepts and/or enhance his circuit knowledge!
-					</aside>
+				<nav class="col-sm-2" id="verticalMenu">
+					<div style="position:fixed; top: 20px">
+						<ul class="list-group">
+							<li class="list-group-item"><a href="#about">About Me</a></li>
+							<li class="list-group-item"><a href="#projects">Projects</a></li>
+							<li class="list-group-item"><a href="#academics">Academics</a></li>
+							<li class="list-group-item"><a href="#experience">Experience</a></li>
+						</ul>
+						<aside class="well">
+							<img src="./Images/hockey.jpg" class="img-responsive img-circle">
+							<div>
+								<i class="fa fa-linkedin"></i>
+								<i class="fa fa-github"></i>
+								<i class="fa fa-twitter"></i>
+							</div>
+							<p>Jason W. is an undergraduate student from the University of Toronto studying Electrical and Computer Engineering. His interests are in...circuits and software! During his free time he likes to learn new software concepts and/or enhance his circuit knowledge!</p>
+						</aside>
+					</div>
 				</nav>
 			</div>
 		</div>
