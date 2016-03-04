@@ -1,0 +1,109 @@
+$light-gray: #F7F7F7;
+$dark-gray: #252525;
+$title-color: #40B940;
+
+h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+section:hover{
+	.pager-header {
+		color: $title-color;
+	}
+}
+
+.panel{
+	border-color: #24B0E6;
+
+	> .panel-heading{
+		color: #24B0E6;
+		background: none;
+		border-color: #24B0E6;
+	}
+}
+
+.panel:hover{
+	> .panel-heading{
+		color: white;
+		background-color: #24B0E6;
+	}
+}
+
+a{
+	color: inherit;
+	text-decoration: none !important;
+}
+
+.pager-header {
+	color: $light-gray;
+	font-weight: normal;
+}
+
+.btn-link{
+	color: black;
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: $title-color;
+	border-style: solid;
+
+	&:hover{
+		background-color: $title-color;
+		color: white;
+	}
+}
+
+#about {
+	img {
+		width: 50%;
+	}
+}
+
+#verticalMenu{
+	> div {
+		top: 0px;
+		position: fixed;
+		margin-bottom: 10px;
+		height: 100%;
+		z-index: 10;
+		background-color: $light-gray;
+
+		ul{
+			li { 
+				color: $dark-gray;
+			}
+
+			li.active {
+				border-left: 3px solid $title-color;
+
+				a{
+					color: $title-color;
+					background: none !important;
+				}
+			}
+		}
+	}
+
+	.well{
+		margin-top: 20px;
+		background: none !important;
+		border: 2px solid $title-color;
+
+		a{
+			font-size: 20px;
+			color: $title-color;
+		}
+	}
+
+	img{
+		width: 70%;
+	}
+}
+
+footer{
+	height: 100px;
+	background-color: $dark-gray;
+
+	h4{
+		color: white;
+	}
+}
