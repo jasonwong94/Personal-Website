@@ -1,9 +1,32 @@
-$light-gray: #DDDDDD;
-$dark-gray: #888888;
+$light-gray: #F7F7F7;
+$dark-gray: #252525;
 $title-color: #40B940;
 
 h3, h4, h5, h6{
 	font-weight: normal;
+}
+
+section:hover{
+	.pager-header {
+		color: $title-color;
+	}
+}
+
+.panel{
+	border-color: #24B0E6;
+
+	> .panel-heading{
+		color: #24B0E6;
+		background: none;
+		border-color: #24B0E6;
+	}
+}
+
+.panel:hover{
+	> .panel-heading{
+		color: white;
+		background-color: #24B0E6;
+	}
 }
 
 a{
@@ -12,7 +35,7 @@ a{
 }
 
 .pager-header {
-	color: $title-color;
+	color: $light-gray;
 	font-weight: normal;
 }
 
@@ -39,9 +62,10 @@ a{
 	> div {
 		top: 0px;
 		position: fixed;
-		margin-top: 10px;
 		margin-bottom: 10px;
 		height: 100%;
+		z-index: 10;
+		background-color: $light-gray;
 
 		ul{
 			li { 
@@ -76,5 +100,10 @@ a{
 }
 
 footer{
-	background-color: $light-gray
+	height: 100px;
+	background-color: $dark-gray;
+
+	h4{
+		color: white;
+	}
 }
