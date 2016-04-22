@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<!-- jQuery -->
+	    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	    <!-- Optional theme -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	    <!-- Latest compiled and minified JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	    <!-- jQuery library -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	    <!-- Google Maps -->
+	    <script src="http://maps.googleapis.com/maps/api/js"> </script>
+
+	    <!--font awesome!-->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	    <link rel="stylesheet" href="main.css">
+
+	    <script>
+	      var toronto = new google.maps.LatLng(43.653226,-79.383184);
+	      var marker;
+
+	      function initialize(){
+	        var mapProp = {
+	          center: new google.maps.LatLng(43.653226,-79.383184),
+	          zoom: 7,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	        };
+
+	        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+	        marker.setMap(map);
+	      }
+
+	      function loadScript()
+	      {
+	        var script = document.createElement("script");
+	        script.type = "text/javascript";
+	        script.src = "http://maps.googleapis.com/maps/api/js?key=&sensor=false&callback=initialize";
+	        document.body.appendChild(script);
+	      }
+
+	      window.onload = loadScript;
+	    </script>
+
+	    <title>Homepage</title>
+	</head>
+	<body data-spy="scroll" data-target="#verticalMenu" data-offset="50">
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#academics">Academics</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#experience">Experience</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><img src="./Images/hockey.jpg" class="img-responsive img-circle center-block" style="width:30px; height:30px; display:inline"></a></li>
+				</ul>
+			</div>
+		</nav>
+		<header class="jumbotron text-center">
+			<h1>Welcome</h1>
+			<p>Jason Wong ECE 1T6 + PEY, University of Toronto</p>
+			<div>
+					<a href="https://ca.linkedin.com/in/jasonwong94" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/jasonwong94" target="_blank"><i class="fa fa-github"></i></a>
+					<a href="https://twitter.com/jasonwong_94" target="_blank"><i class="fa fa-twitter"></i></a>
+			</div>
+		</header>
+
+		<div class="col-sm-12">
+	    <section id="about">
+		<h2 class="pager-header">About Me</h2>
+		<p>I am an Electrical and Computer Engineering Student from the University of Toronto. </p>
+			<article class="row">
+		        <div class="col-md-6">
+					<h3 class="header-title">Personal</h3>
+					<img src="./Images/hockey.jpg" class="img-responsive img-circle center-block">
+					<p>I am a 2016 + PEY (1T6+ PEY) undergraduate student. Born in Toronto but raised in Hong Kong, I am back in Toronto to pursue my bachelors in engineering. I joined electrical and computer because of my interest in applying the knowledge of circuits and control systems to design innovative ideas in this era.</p>
+					<p>With a passion for programming and knowledge, I love to explore the technological word and develop new ideas. My areas of exploration have ranged from web development to mobile app developemt and even microcontrollers. As an engineer with a Raspberry Pi and Arduino, I am looking for ways to combine the 2 together! Ultimately, my goals are to have a basic knowledge of app development and databases - <code>MongoDB</code> and <code>MySQL</code> </P>
+		        </div>
+		        <div class="col-md-6">
+					<h3 class="header-title">Academic</h3>
+					<img src="./Images/UTEK-2016.jpg" class="img-responsive img-circle center-block">
+					<p>I am an ECE student with an interest in control systems. Throughout my undergraduate journey, I have done design projects during class and in clubs mostly in <code>C</code> and <code>C++</code>. During my studies at UofT, I look forward in enhancing my programming proficency and circuitry knowledge and help contribute in developing an awesome final year design project</p> 
+		        </div>
+			</article>
+	    </section>
+
+	    <section id="academics">
+	      <h2 class="pager-header">Academics/University Life: </h2>
+	      
+	       <h3 class="header-title">Clubs</h3>
+	       <p>During my year at UofT, I have been involved in several clubs. Here are some of the clubs that I have been involved recently and my contributions towards them</p>
+
+	      <article class="row text-center">
+	        <div class="col-md-4">
+	          <div class="thumbnail">
+	            <img src="./images/club_logos/spark_logo.png" alt="Spark Design Club">
+	            <div class="caption">
+					<h3>Co-President</h3>
+					<h3><small>Spark Design Club</small></h3>
+	            </div>
+	          </div>
+	        </div>
+
+	        <div class="col-md-4">
+	          <div class="thumbnail">
+	            <img src="./images/club_logos/utra_logo.jpg" alt="University of Toronto Robotics Assoication">
+	            <div class="caption">
+	            	<h3>3D Printer Co-Lead</h3>
+					<h3><small>University of Toronto Robotics Association</small></h3>
+	            </div>
+	          </div>
+	        </div>
+
+	        <div class="col-md-4">
+	          <div class="thumbnail">
+	            <img src="./images/club_logos/unerd_logo.jpeg" alt="UnERD 2015">
+	            <div class="caption">
+					<h3>Logistics Director</h3>
+					<h3><small>Undergradute Engineering Research Day</small></h3>
+	            </div>
+	          </div>
+	        </div>
+	      </article>
+
+	      <article class="row">
+	      	<div class="col-md-4">
+	      		<img class="img-responsive" src="./images/club_logos/spark_logo.png" alt="Spark Design Club">
+	      	</div>
+	      	<div class="col-md-8">
+	      		<h3>Spark Design Club
+	      			<span class="label label-default">2014-15</span>
+	      			<span class="label label-default">2015-16
+	      			</span>
+	      		</h3>
+	      		<h4>The Spark Design Club designs and builds cool and interactive electrical and mechanical displays around campus. The club aims to provide students to enhance their soft skills by learning how to use power tools and solder circuitry. Projects are designed by the Spark exec team and are build with the help of Sparkers over a series of workshops.</h4>
+
+	      		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	      	</div>
+	      </article>
+
+	      <article class="row">
+	      	<div class="col-md-4">
+	      		<img class="img-responsive" src="./images/club_logos/utra_logo.jpg" alt="Spark Design Club">
+	      	</div>
+	      	<div class="col-md-8">
+	      		<h3>University of Toronto Robotics Association (UTRA)
+	      			<span class="label label-default">2014-15</span>
+	      		</h3>
+	      		<h4>UTRA is student led organization intended to make an name for robotics at UofT. Currently there are 4 divisions: Sumo, 3D Printing, Autonomous and Combat</h4>
+
+	      		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	      	</div>
+	      </article>
+
+	      <article class="row">
+	      	<div class="col-md-4">
+	      		<img class="img-responsive" src="./images/club_logos/unerd_logo.jpeg" alt="Spark Design Club">
+	      	</div>
+	      	<div class="col-md-8">
+	      		<h3>Undergradute Enginering Research Day (UnERD)
+	      			<span class="label label-default">2014-15</span>
+	      		</h3>
+	      		<h4>This annual event is for undergraduate engineering research summer students to showcase their work. Students presented their work either as a presentation (held in lecture rooms) or as a poster (presented at the atrium).</h4>
+
+	      		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	      	</div>
+	      </article>
+
+	       <h3 class="header-title">Courses</h3>
+	       <p>Having the option to choose courses for my 3rd and 4th year, here are the list of courses. For some of the courses, I had the opportunity to work on small projects</p>
+
+	       <article class="row text-center">
+   			<div class="col-md-3">
+   				<h3>1st Year</h3>
+   			</div>
+   			<div class="col-md-3">
+   				<h3>2nd Year</h3>
+   			</div>
+   			<div class="col-md-3">
+   				<h3>3rd Year</h3>
+   			</div>
+   			<div class="col-md-3">
+   				<h3>PEY</h3>
+   			</div>
+	       </article>
+	      <!-- <article class="panel-group">
+	        <div class="panel" data-toggle="collapse">
+	          <div class="panel-heading">
+	            <h3 class="panel-title">3rd year</h3>
+	          </div>
+	          <div class="panel-body">
+	            <p>Focus on fundamentals of electrical and computer engineering. A couple of key points:
+	            <ul>
+					<li>Operating System- Enhanced and modified an Operating System (OS161) such as library calls and virtual memory in <code>C</code></li>
+					<li>Networks- Implemented a file transfer function and chat client using <code>C</code> </li>
+	            </ul>
+	            </p>
+	            <ul class="list-body col-md-6">
+					<li class="list-group-item">Fundamentals of Power Electronics</li>
+					<li class="list-group-item">Algorithms and Data Structure</li>
+					<li class="list-group-item">Fields and Waves</li>
+					<li class="list-group-item highlight">Control Systems</li>
+					<li class="list-group-item">Probability</li>
+	            </ul>
+	            <ul class="list-body col-md-6">
+					<li class="list-group-item">Analog Electronics</li>
+					<li class="list-group-item">Digital Electronics</li>
+					<li class="list-group-item highlight">Operating Systems</li>
+					<li class="list-group-item">Networks</li>
+					<li class="list-group-item">Introduction to Accounting and Finance</li>
+	            </ul>
+	          </div>
+	        </div>
+
+	        <div class="panel" data-toggle="collapse">
+	          <div class="panel-heading">
+					<h3 class="panel-title">2nd year</h3>
+	          </div>
+	          <div class="panel-body">
+	            <p>Introduction to more detailed circuitry</p>
+	            <ul>
+					<li>Design Course- Collaborated to develop a mini-storage server in<code>C</code> using <code>SVN</code>, producing technical documentation</li>
+					<li>Hardware and Embedded Systems-  <code>Verilog</code> and <code>Assembly</code>  </li>
+	            </ul>
+	            </p>
+	            <ul class="list-body col-md-6">
+					<li class="list-group-item">Calculus III</li>
+					<li class="list-group-item">Advanced Engineering Math</li>
+					<li class="list-group-item highlight">Computer Hardware</li>
+					<li class="list-group-item">Circuits/li>
+					<li class="list-group-item">Programming Fundamentals <code>C++</code></li>
+	            </ul>
+	            <ul class="list-body col-md-6">
+					<li class="list-group-item">Electric and Magnetic Fields</li>
+					<li class="list-group-item highlight">Computer Organization</li>
+					<li class="list-group-item">Introduction to Electronics</li>
+					<li class="list-group-item highlight">Design Course</li>
+					<li class="list-group-item">Signals</li>
+	            </ul>
+	          </div>
+	        </div>
+
+	        <div class="panel" data-toggle="collapse">
+	          <div class="panel-heading">
+	            <h3 class="panel-title">1st year</h3>
+	          </div>
+	          <div class="panel-body">
+	            <p>Focus on fundamentals of electrical and computer engineering. A couple of key points:
+	            </p>
+	            <ul class="list-body col-md-6">
+					<li class="list-group-item">Linear Algebra</li>
+					<li class="list-group-item">Calculus I</li>
+					<li class="list-group-item">Statics</li>
+					<li class="list-group-item">Engineering Strategies and Practice I</li>
+					<li class="list-group-item">Introduction to Programming</li>
+	            </ul>
+	            <ul class="list-body col-md-6">
+					<li class="list-group-item">Electrical Fundamentals</li>
+					<li class="list-group-item">Calculus II</li>
+					<li class="list-group-item">Dynamics</li>
+					<li class="list-group-item">Engineering Strategies and Practice II</li>
+					<li class="list-group-item">Introduct to Physical Chemistry</li>
+	            </ul>
+	          </div>
+	        </div>
+	      </article> -->
+	    </section>
+
+	    <section id="projects">
+	      <h2 class="pager-header">Personal Projects</h2>
+	      <p>Check out the list of projects below. Feel free to check out my GitHub account below
+	      </p>
+	      <div class="row">
+	      		<a href="http://github.com/jasonwong94" target="_blank" class="btn btn-link col-md-2 col-md-offset-5"><i class="fa fa-github"></i>GitHub</a>
+	      </div>
+	    </section>
+
+	    <section id="experience">
+			<h2 class="pager-header">Experience</h2>
+			<p>I have had the opportunity to enhance and develop my skills in both academic and industry areas.
+			<p>Skills: </p>
+			<div class="fluid-container">
+				<div class="row">
+					<article class="col-md-3">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Web Dev/ Interpreted</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>HTML</li>
+									<li>Javascript</li>
+									<li>CSS/SASS</li>
+									<li>Python</li>
+									<li>Bash</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+
+					<article class="col-md-3">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Programming</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>C</li>
+									<li>C++</li>
+									<li>Java</li>
+									<li>Verilog</li>
+									<li>Assembly (Nios II)</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-3">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Analytical/Design</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+								  <li>Matlab</li>
+								  <li>Spice/LTSpice</li>
+								  <li>Quartus/Nios II</li>
+								  <li>SUE/MAX</li>
+								  <li>Alitum</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-3">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">Graphics Design</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>GIMP</li>
+									<li>Inkscape</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<div class="row">
+	      		<a href="Jason_Wong_Resume.pdf" target="_blank" class="btn text-center col-md-2 col-md-offset-5 btn-link">Resume</a>
+	      	</div>
+
+			<p>Experience with: </p>
+			<div id="googleMap" style="width: 100%; height:500px"></div>
+			<div class="list-group">
+			<a href="#" class="list-group-item">
+			    <h4 class="list-group-item-heading">Kitchener, Ontario</h4>
+			    <p class="list-group-item-text">Desire2Learn</p>
+			</a>
+			<a href="#" class="list-group-item">
+				<h4 class="list-group-item-heading">Toronto, Ontario</h4>
+			    <p class="list-group-item-text">
+			    Adpalor, University of Toronto
+		    	</p>
+			 </a>
+			 <a href="#" class="list-group-item">
+			    <h4 class="list-group-item-heading">Hong Kong, Hong Kong SAR</h4>
+			    <p class="list-group-item-text">Standard Chartered Bank</p>
+			 </a>
+			</div>
+			</section>
+		</div>
+	</div>
+	</body>
+</html>
