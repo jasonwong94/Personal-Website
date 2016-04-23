@@ -1,69 +1,33 @@
-h3, h4, h5, h6 {
-  font-weight: normal; }
+#academics .description {
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
-section:hover .pager-header {
-  color: #40B940; }
-
-.panel {
-  border-color: #24B0E6; }
-  .panel > .panel-heading {
-    color: #24B0E6;
-    background: none;
-    border-color: #24B0E6; }
-
-.panel:hover > .panel-heading {
+.btn {
+  width: 150px;
+  border-radius: 3px;
+  border-color: #20E620;
+  background-color: #20E620;
   color: white;
-  background-color: #24B0E6; }
+  font-weight: bolder; }
 
-a {
-  color: inherit;
-  text-decoration: none !important; }
-
-.pager-header {
-  color: #F7F7F7;
+.label {
+  background-color: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #1DCDCD;
+  color: #1DCDCD;
   font-weight: normal; }
 
-.btn-link {
-  color: black;
-  border-radius: 10px;
-  border-width: 2px;
-  border-color: #40B940;
-  border-style: solid; }
-  .btn-link:hover {
-    background-color: #40B940;
-    color: white; }
+.awards {
+  color: #1DCDCD; }
 
-#about img {
-  width: 50%; }
+.contact-icons a {
+  color: #FF2323;
+  font-size: 20px; }
 
-#verticalMenu > div {
-  top: 0px;
-  position: fixed;
-  margin-bottom: 10px;
-  height: 100%;
-  z-index: 10;
-  background-color: #F7F7F7; }
-  #verticalMenu > div ul li {
-    color: #252525; }
-  #verticalMenu > div ul li.active {
-    border-left: 3px solid #40B940; }
-    #verticalMenu > div ul li.active a {
-      color: #40B940;
-      background: none !important; }
-#verticalMenu .well {
-  margin-top: 20px;
-  background: none !important;
-  border: 2px solid #40B940; }
-  #verticalMenu .well a {
-    font-size: 20px;
-    color: #40B940; }
-#verticalMenu img {
-  width: 70%; }
-
-footer {
-  height: 100px;
-  background-color: #252525; }
-  footer h4 {
-    color: white; }
+.panes i {
+  font-size: 20px;
+  color: #1DCDCD; }
 
 /*# sourceMappingURL=main.css.map */
